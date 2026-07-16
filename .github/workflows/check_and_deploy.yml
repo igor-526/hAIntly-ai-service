@@ -62,7 +62,7 @@ jobs:
 
       - name: Deploy
         run: |
-          helm upgrade --install haintly-main-be .helm/ \
+          helm upgrade --install haintly-ai-service .helm/ \
             --namespace haintly \
             --create-namespace \
             --set imageTag=${{ github.sha }} \
