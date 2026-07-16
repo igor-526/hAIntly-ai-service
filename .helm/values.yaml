@@ -1,11 +1,11 @@
 # Deployment settings
-name: haintly-profile-service
-componentsLabel: haintly-profile-service
+name: haintly-ai-service
+componentsLabel: haintly-ai-service
 replicaCount: 1
 namespace: haintly
 
 # App settings
-secretName: haintly-profile-service-secret
+secretName: haintly-ai-service-secret
 containerPort: 8000
 resources:
   requests:
@@ -16,7 +16,7 @@ resources:
     memory: 512Mi
 
 # Image settings
-image: ghcr.io/igor-526/haintly_profile-service
+image: ghcr.io/igor-526/haintly_ai-service
 imagePullSecertName: ghcr-secret
 imageTag: latest
 
